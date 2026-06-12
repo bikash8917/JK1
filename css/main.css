@@ -1532,10 +1532,8 @@ button {
 }
 
 form select,
-form input[type="text"],
 form input[type="search"],
-form textarea,
-form input[type="email"] {
+form textarea{
   border: 0;
   font-size: 0.875rem;
   line-height: 1.3;

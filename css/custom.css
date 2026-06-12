@@ -18,6 +18,24 @@
     .logo-img {
         width: 70px;
     }
+    .bg-img-adjust{
+        height: 60vh;
+        position:static;
+         padding-bottom: 0px;
+    }
+}
+@media (min-width: 500px) {
+
+    .bg-img-adjust{
+        height: 80vh;
+       padding-bottom: 30px;
+    }
+}
+@media (max-width: 450px) {
+
+   .contact-card{
+    padding: 20px !important;
+   }
 }
 
 
@@ -340,7 +358,7 @@
     background:#f8f8f8;
 }
 
-.container{
+.container-form{
     width:90%;
     max-width:1200px;
     margin:auto;
