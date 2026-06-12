@@ -2788,9 +2788,7 @@ h6 {
     color: black;
     transform: translateY(100%);
   }
-  .menu .nav li a:hover {
-    color: white;
-  }
+  
   .menu .nav li.menu-item-has-children > a::after {
     content: "\e901";
     font-family: 'icomoon' !important;
