@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+
+  <!-- Required meta tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/vendors.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="img/jk1/favicon.png">
+
+  <title>Services</title>
+</head>
+
+<body class="preloader-visible" data-barba="wrapper">
+
+
+  <!-- preloader start -->
+  <div class="preloader js-preloader ">
+    <div class="preloader__bg"></div>
+
+    <div class="preloader__progress">
+      <div class="preloader__progress__inner"></div>
+      <img src="img/jk1/JK1_Black.png" alt="preloader image" class="preloader__img" height="100">
+    </div>
+  </div>
+  <!-- preloader end -->
+
+  <!-- cursor start -->
+  <div class="cursor js-cursor">
+    <div class="cursor__wrapper">
+      <div class="cursor__follower js-follower"></div>
+      <div class="cursor__label js-label"></div>
+      <div class="cursor__icon js-icon"></div>
+    </div>
+  </div>
+  <!-- cursor end -->
+
+
+  <!-- barba container start -->
+  <div class="barba-container" data-barba="container">
+
+
+    <main class="main-content  ">
+
+
+        
+
+      <!-- header start -->
+      <header class="header custom-header js-header pos-sticky bg-light ">
+        <div class="header__bar  js-header-bar">
+
+          <div class="row justify-content-between align-items-center">
+
+            <div class="col-auto z-5 js-header-item">
+              <div class="header__item -margin-sm">
+                <div class="header__logo text-white js-header-logo">
+                  <a data-barba href="index.html">
+                    <img width="100" src="img/jk1/JK_Logo_website.png" alt="Logo" class="logo-img">
+
+                  </a>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="menu js-menu ">
+              <div class="mobile__background js-mobile-bg"></div>
+
+              <div class="menu__container">
+                
+
+                <ul class="nav js-navList ">
+                  <li class="nav-li">
+                    <a  href="index.html">Home</a>
+                  </li>
+                  
+                  <li class="nav-li">
+                    <a  href="about.html">About Us</a>
+                  </li>
+                  <li class=" nav-li">
+                    <a  href="service.html">Services</a>
+                  </li>
+                  <li class=" nav-li">
+                    <a  href="project.html">Projects</a>
+                  </li>
+                  <li class=" nav-li">
+                    <a  href="contact.html">Contacts</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="mobile__footer js-mobile-footer">
+                <div class="mobile__socials">
+                  <a data-barba href="https://www.facebook.com/share/r/14Tsqv6ykif/">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                  </a>
+                  <a data-barba href="#">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                  </a>
+                  <a data-barba href="https://www.instagram.com/reel/DT-6LGMk1m3/?igsh=MTFrdWw5NDloODdj">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                  </a>
+                  <a data-barba href="#">
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                  </a>
+                </div>
+
+               <div class="mobile__copyright">
+                 
+                  <p id="copyright"></p>
+                </div>
+
+              </div>
+            </div>
+
+
+            <div class="col-auto z-5 sm:pos-unset js-header-item">
+              <div class="header__icons ">
+                 <div class="header-contact">
+
+                  <div class="contact-details">
+
+                      <div>
+                          <i class="fas fa-envelope"></i>
+                          <a href="mailto:jk1elevator12@gmail.com" class="font-black fw-500">
+                              jk1elevator12@gmail.com
+                          </a>
+                      </div>
+
+                      <div>
+                          <i class="fas fa-phone-alt"></i>
+                          <a href="tel:+917992732622" class="font-black fw-500">
+                              +91 7992732622 ,
+                          </a>
+                          <a href="tel:+917873686331" class="font-black fw-500">
+                              +91 7873686331
+                          </a>
+                      </div>
+
+                  </div>
+
+                  <a href="contact.html" class="header-btn">
+                      Get In Touch
+                    
+                  </a>
+
+              </div>
+
+                
+
+                <div class="header__menu">
+                 
+
+                  <button type="button" class="nav-button-open d-none md:d-block js-nav-open">
+                   <div class="menu-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                  </button>
+
+                  <button type="button" class="nav-button-close d-none md:d-block pointer-events-none js-nav-close pt-3">
+                    <i class="icon cross icon-cross"></i>
+                  </button>
+                </div>
+              </div>
+               
+            </div>
+          </div>
+
+
+         
+        </div>
+      </header>
+      <!-- header end -->
+
+
+      <div class="content-wrapper  js-content-wrapper">
+
+
+         <!-- masterhead  -->
+         <section class="page-masthead master-head-padding">
+          <div data-parallax="0.6" class="page-masthead__bg">
+            
+          <div id="jarallax-container-40" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; overflow: hidden; z-index: -100;"><div data-parallax-target="" class="bg-image js-lazy loaded" style="object-fit: cover; object-position: 50% 50%; max-width: none; position: absolute; top: 0px; left: 0px; width: 1424.8px; height: 562.8px; overflow: hidden; pointer-events: none; transform-style: preserve-3d; backface-visibility: hidden; will-change: transform, opacity; margin-top: -98.4px; transform: translate3d(0px, 98.4px, 0px); background-image: url(&quot;/img/jk1/master-header.jpg&quot;);" data-ll-status="loaded"></div></div></div>
+
+          <div class="container">
+            <div class="page-masthead__content">
+              <div class="row justify-content-between md:justify-content-center align-items-center">
+                <div class="col-lg-9 col-md-10">
+                  <div data-anim="slide-up delay-1" class="is-in-view">
+                    <div class="page-masthead__subtitle">What We Offer</div>
+                   
+                    <h1 class="page-masthead__title text-white"> Our Services</h1>
+                  </div>
+                </div>
+
+                <div class="col-auto">
+                  <div data-anim="slide-up delay-1" class="page-masthead-bread text-white md:mt-24 is-in-view">
+                    <a data-barba="" href="index.html" class="page-masthead-bread__item">Home</a>
+                    /
+                    <a data-barba="" href="#" class="page-masthead-bread__item ">Our Services</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <!-- Services -->
+
+        <section class="layout-pt-md layout-pb-md">
+          <div class="container">
+
+            <div class="tabs -section js-tabs">
+              <div class="row y-gap-48">
+                <div class="col-xl-3 col-lg-4">
+                  <div class="tabs__controls js-tabs-controls">
+                    <button class="tabs__button col-12 is-active" data-tab-target=".-tab-item-1" type="button">
+                      <i class="icon text-xl text-accent icon-pencil mr-16"></i>
+                     Elevator Installation
+                    </button>
+
+                    <button class="tabs__button col-12 mt-20" data-tab-target=".-tab-item-2" type="button">
+                      <i class="icon text-xl text-accent icon-rocket mr-16"></i>
+                      Maintenance & AMC
+                    </button>
+
+                    <button class="tabs__button col-12 mt-20" data-tab-target=".-tab-item-3" type="button">
+                      <i class="icon text-xl text-accent icon-cube mr-16"></i>
+                     Repair Services
+                    </button>
+
+                    <button class="tabs__button col-12 mt-20" data-tab-target=".-tab-item-4" type="button">
+                      <i class="icon text-xl text-accent icon-idea mr-16"></i>
+                      Modernization
+                    </button>
+                  </div>
+                </div>
+
+                <div class="col-xl-9 col-lg-8">
+                  <div class="tabs__content js-tabs-content">
+                    <div class="tabs__pane -tab-item-1 is-active">
+                      <div class="text-sm text-accent uppercase">WE OFFER</div>
+                      <h4 class="text-2xl fw-600 mt-8">Professional Elevator Installation</h4>
+                      <p class="mt-20">We provide expert elevator installation services for residential, commercial, and industrial buildings. Our team ensures every installation meets the highest standards of safety, performance, and reliability while delivering a smooth and comfortable user experience.</p>
+                      <p class="mt-16">From passenger elevators to customized lift solutions, we manage every stage of the installation process with precision and professionalism. Our goal is to provide long-lasting mobility solutions tailored to your building requirements.</p>
+
+                      <div class="row y-gap-32 py-48 md:py-32">
+                        <div class="col-md-6">
+                          <div class="ratio ratio-1:1 bg-image js-lazy error" data-bg="img/blog/1.png" data-ll-status="error" style="background-image: url(&quot;img/jk1/service-1.jpg&quot;);"></div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="ratio ratio-1:1 bg-image js-lazy error" data-bg="img/blog/1.png" data-ll-status="error" style="background-image: url(&quot;img/jk1/service-2.png&quot;);"></div>
+                        </div>
+                      </div>
+
+                      <p class="">Using high-quality components and advanced technology, we ensure reliable performance, passenger comfort, and long-term operational efficiency for every installation project.</p>
+                    </div>
+
+                    <div class="tabs__pane -tab-item-2">
+                      <div class="text-sm text-accent uppercase">WE OFFER</div>
+                      <h4 class="text-2xl fw-600 mt-8">Maintenance & AMC Services</h4>
+                      <p class="mt-20">Our preventive maintenance and Annual Maintenance Contract (AMC) services are designed to keep elevators operating safely and efficiently throughout the year. Regular inspections help identify potential issues before they become major problems.</p>
+                      <p class="mt-16">With scheduled servicing and expert technical support, we reduce downtime and improve the overall reliability of elevator systems. Our team follows strict maintenance procedures to ensure optimal performance.</p>
+                    </div>
+
+                    <div class="tabs__pane -tab-item-3">
+                      <div class="text-sm text-accent uppercase">WE OFFER</div>
+                      <h4 class="text-2xl fw-600 mt-8">Elevator Repair & Troubleshooting</h4>
+                      <p class="mt-20">We offer prompt and reliable repair services for elevators experiencing mechanical, electrical, or operational issues. Our skilled technicians quickly diagnose faults and implement effective solutions.</p>
+                      <p class="mt-16">Whether it is an emergency breakdown, control system malfunction, or performance issue, we focus on restoring elevator functionality with minimal disruption to daily operations.</p>
+                    </div>
+
+                    <div class="tabs__pane -tab-item-4">
+                      <div class="text-sm text-accent uppercase">WE OFFER</div>
+                      <h4 class="text-2xl fw-600 mt-8">Elevator Modernization & Upgrades</h4>
+                      <p class="mt-20">Our modernization services help transform outdated elevator systems into safer, smarter, and more efficient solutions. We upgrade critical components to improve reliability and performance.</p>
+                      <p class="mt-16">From advanced control systems and safety features to modern cabin interiors and energy-efficient technology, our upgrades enhance both functionality and passenger experience.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+        <!-- FAQ Section -->
+        <section class="layout-pt-md layout-pb-sm fade-primary">
+            <div class="container">
+                    
+                    <div class="row justify-content-center">
+                    <div class="col-auto">
+                        <div class="sectionHeading -top-line text-center">
+                        <span class="sectionHeading__subtitle">FAQ</span>
+                        <h2 class="sectionHeading__title">Frequently Asked Questions</h2>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="row justify-content-center pt-60">
+                    <div class="col-xl-8 col-lg-10">
+                        <div class="accordion -simple js-accordion">
+
+                        <!-- FAQ 1 -->
+                        <div class="accordion__item">
+                            <div class="accordion__button text-black">
+                            <button class="text-lg md:text-base fw-600 text-black">
+                                How often should an elevator be serviced?
+                            </button>
+                            <div class="accordion__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus icon">
+                                <line x1="12" y1="5" x2="12" y2="19"></line>
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-minus icon">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                </svg>
+                            </div>
+                            </div>
+                            <div class="accordion__content">
+                            <div class="accordion__content__inner">
+                                <p class="text-sm">
+                                Regular elevator maintenance should be performed at scheduled intervals to ensure safety, reliability, and smooth operation. The frequency depends on usage, building type, and manufacturer recommendations.
+                                </p>
+                            </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 2 -->
+                        <div class="accordion__item">
+                            <div class="accordion__button text-black">
+                            <button class="text-lg md:text-base fw-600 text-black">
+                                Do you provide Annual Maintenance Contracts (AMC)?
+                            </button>
+                            <div class="accordion__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus icon">
+                                <line x1="12" y1="5" x2="12" y2="19"></line>
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-minus icon">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                </svg>
+                            </div>
+                            </div>
+                            <div class="accordion__content">
+                            <div class="accordion__content__inner">
+                                <p class="text-sm">
+                                Yes, JK1 Elevator offers comprehensive AMC plans that include routine inspections, preventive maintenance, and technical support to minimize downtime and extend equipment lifespan.
+                                </p>
+                            </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 3 -->
+                        <div class="accordion__item">
+                            <div class="accordion__button text-black">
+                            <button class="text-lg md:text-base fw-600 text-black">
+                                Can existing elevators be modernized?
+                            </button>
+                            <div class="accordion__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus icon">
+                                <line x1="12" y1="5" x2="12" y2="19"></line>
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-minus icon">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                </svg>
+                            </div>
+                            </div>
+                            <div class="accordion__content">
+                            <div class="accordion__content__inner">
+                                <p class="text-sm">
+                                Absolutely. We provide modernization services that upgrade outdated elevator systems with advanced technology, enhanced safety features, improved performance, and energy-efficient components.
+                                </p>
+                            </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 4 -->
+                        <div class="accordion__item">
+                            <div class="accordion__button text-black">
+                            <button class="text-lg md:text-base fw-600 text-black">
+                                How quickly can repair services be provided?
+                            </button>
+                            <div class="accordion__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus icon">
+                                <line x1="12" y1="5" x2="12" y2="19"></line>
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-minus icon">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                </svg>
+                            </div>
+                            </div>
+                            <div class="accordion__content">
+                            <div class="accordion__content__inner">
+                                <p class="text-sm">
+                                Our technical team responds promptly to service requests and breakdowns. We strive to diagnose issues quickly and restore elevator operation with minimal disruption.
+                                </p>
+                            </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 5 -->
+                        <div class="accordion__item">
+                            <div class="accordion__button text-black">
+                            <button class="text-lg md:text-base fw-600 text-black">
+                                Do you install elevators for residential and commercial buildings?
+                            </button>
+                            <div class="accordion__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus icon">
+                                <line x1="12" y1="5" x2="12" y2="19"></line>
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-minus icon">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                </svg>
+                            </div>
+                            </div>
+                            <div class="accordion__content">
+                            <div class="accordion__content__inner">
+                                <p class="text-sm">
+                                Yes, we provide customized elevator installation solutions for residential homes, apartments, commercial buildings, hospitals, hotels, and industrial facilities.
+                                </p>
+                            </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 6 -->
+                        <div class="accordion__item">
+                            <div class="accordion__button text-black">
+                            <button class="text-lg md:text-base fw-600 text-black">
+                                Are your elevator solutions compliant with safety standards?
+                            </button>
+                            <div class="accordion__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus icon">
+                                <line x1="12" y1="5" x2="12" y2="19"></line>
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-minus icon">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                </svg>
+                            </div>
+                            </div>
+                            <div class="accordion__content">
+                            <div class="accordion__content__inner">
+                                <p class="text-sm">
+                                Yes, all our installations, maintenance services, and modernization projects follow industry safety standards and best practices to ensure safe and reliable operation.
+                                </p>
+                            </div>
+                            </div>
+                        </div>
+
+                        </div>
+                    </div>
+                    </div>
+
+            </div>
+        </section>
+
+        <footer class="footer -type-1">
+
+          <div class="footer__top">
+            <div class="container">
+              <div class="row y-gap-48 justify-content-between">
+
+                <div class="col-lg-3 col-md-6">
+                  <div class="footer__item">
+                    <h3 class="footer__title text-white">Contact</h3>
+
+                    <div class="footer__content pr-20">
+                      <div class="footer__content__item">
+                        <p><span>T:</span> +91 7873686331 , +91 7992732622</p>
+                        <p><span>M:</span> jk1elevator12@gmail.com</p>
+                      </div>
+
+                      <div class="footer__content__item">
+                        <p><span>A:</span> Plot No. 4406/8112, 2nd Floor, Baragada,
+                        Jharana Sahi, Bhubaneswar, Odisha – 751018</p>
+                      </div>
+
+                      <div class="footer__content__item">
+                        <a target="_blank" href="https://www.google.com/maps?q=20.2476364,85.8555722&z=17&hl=en" class="button -simple text-white">GET DIRECTIONS</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="col-lg-3 col-md-6">
+                  <div class="footer__item">
+                    <h3 class="footer__title text-white">OUR SERVICES</h3>
+
+                    <div class="footer__content">
+                      <div class="footer__content__item">
+                        <a data-barba href="#">Elevator Installation</a>
+                      </div>
+
+                      <div class="footer__content__item">
+                        <a data-barba href="#">Maintenance & AMC</a>
+                      </div>
+
+                      <div class="footer__content__item">
+                        <a data-barba href="#">Repair Services</a>
+                      </div>
+
+                      <div class="footer__content__item">
+                        <a data-barba href="#">Modernization & Upgrades</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="col-lg-3 col-md-6">
+                  <div class="footer__item">
+                    <h3 class="footer__title text-white">USEFUL LINKS</h3>
+
+                    <div class="footer__content">
+                      <div class="footer__content__item">
+                        <a data-barba href="#">Project</a>
+                      </div>
+
+                      <div class="footer__content__item">
+                        <a data-barba href="#">News</a>
+                      </div>
+
+                      <div class="footer__content__item">
+                        <a data-barba href="#">About</a>
+                      </div>
+
+                      <div class="footer__content__item">
+                        <a data-barba href="#">Contact Us</a>
+                      </div>
+
+                    
+
+                      <div class="footer__content__item">
+                        <a data-barba href="#">FAQ</a>
+                      </div>
+
+                      <div class="footer__content__item">
+                        <a data-barba href="#">Privacy Policy</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="col-lg-3 col-md-6">
+                  <div class="footer__item">
+                    <h3 class="footer__title text-white">SUBSCRIBE</h3>
+
+                    <div class="footer__content">
+                      <div class="footer__content__item">
+                        <p>We will send you updates on new products and discounts.</p>
+                      </div>
+
+                      <div class="footer__newsletter">
+                        <form action="">
+                          <input placeholder="Your Email" type="email">
+
+                          <button type="submit">
+                            <i class="icon icon-send"></i>
+                          </button>
+                        </form>
+                      </div>
+
+                      <div class="footer__socials">
+                        <h3 class="footer__title text-white">FOLLOW US</h3>
+
+                        <div class="footer__socials_content">
+                          <a data-barba href="https://www.facebook.com/share/r/14Tsqv6ykif/" class="text-white">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                          </a>
+                          <a data-barba href="#" class="text-white">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                          </a>
+                          <a data-barba href="https://www.instagram.com/reel/DT-6LGMk1m3/?igsh=MTFrdWw5NDloODdj" class="text-white">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                          </a>
+                          <a data-barba href="#" class="text-white">
+                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+
+          <div class="footer__bottom">
+            <div class="container">
+              <div class="row align-items-center justify-content-between sm:justify-content-start">
+               <div class="col-auto sm:order-2">
+                  <div class="footer__bottom_text">
+                      © <span id="currentYear"></span> JK1elevator. All rights reserved.
+                  </div>
+                </div>
+
+                <div class="col-auto sm:order-1">
+                 
+                </div>
+
+                <div class="col-auto sm:d-none">
+                  <div class="footer__bottom_text">Designed by CreativeLayers</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div data-cursor class="backButton js-backButton">
+            <div class="nav -slider">
+              <div class="nav__item -left">
+                <i class="icon icon-right-arrow"></i>
+              </div>
+            </div>
+          </div>
+
+        </footer>
+
+
+      </div>
+    </main>
+  </div>
+  <!-- barba container end -->
+
+
+  <!-- JavaScript -->
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+
+  <script src="js/vendors.js"></script>
+  <script src="js/main.js"></script>
+
+  <script>
+      document.getElementById("copyright").innerHTML =
+    `© ${new Date().getFullYear()} JK1elevator. All rights reserved.`;
+  </script> 
+
+  <script>
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+</script>
+</body>
+
+
+
+</html>
